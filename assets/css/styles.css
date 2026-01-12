@@ -135,7 +135,6 @@ body {
   color: #f9fafb;
 }
 
-/* ==== Hero ==== */
 .hero {
   position: relative;
   z-index: 1;
@@ -231,54 +230,18 @@ body {
   color: #6b7280;
 }
 
-@media (max-width: 640px) {
-  .site-header {
-    padding-inline: 1.25rem;
-  }
-
-  .nav {
-    gap: 0.9rem;
-  }
-
-  .hero {
-    padding-inline: 1.25rem;
-    text-align: left;
-  }
-
-  .hero-actions {
-    justify-content: flex-start;
-  }
-
+.tag {
+  font-size: 0.8rem;
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(2, 6, 23, 0.35);
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
 }
 
 /* =========================
    About page
    ========================= */
-
-body.page-about {
-
-  background: radial-gradient(circle at top, #0b1026 0%, #070a18 42%, #000 100%);
-}
-
-body.page-about .starfield {
-  background: radial-gradient(circle at 30% 20%, #0b1026 0%, #070a18 40%, #000 100%);
-}
-
-body.page-about .star {
-  opacity: 0.14;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.35);
-}
-
-body.page-about .starfield-inner {
-  animation: about-drift 55s ease-in-out infinite alternate;
-}
-
-@keyframes about-drift {
-  0%   { transform: translate(-1.5%, 1.0%) rotate(-4deg) scale(1); }
-  50%  { transform: translate(1.0%, -1.2%) rotate(3deg) scale(1.03); }
-  100% { transform: translate(2.0%, 1.5%) rotate(-2deg) scale(1.01); }
-}
-
 .about {
   position: relative;
   z-index: 1;
@@ -297,7 +260,6 @@ body.page-about .starfield-inner {
   border-radius: 24px;
   padding: clamp(1.25rem, 3.2vw, 2rem);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
-  opacity: 85%;
 }
 
 .about-kicker {
@@ -312,13 +274,7 @@ body.page-about .starfield-inner {
   font-size: clamp(2.0rem, 4vw, 3.0rem);
   font-weight: 750;
   letter-spacing: 0.02em;
-  background: linear-gradient(
-  135deg,
-  #e5e7eb,
-  #7dd3fc,
-  #38bdf8,
-  #0ea5e9
-);
+  background: linear-gradient(135deg, #e5e7eb, #93c5fd, #60a5fa, #3b82f6);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -352,60 +308,248 @@ body.page-about .starfield-inner {
   margin-bottom: 0.75rem;
 }
 
-.about-list {
-  list-style: none;
-  display: grid;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-  color: #9ca3af;
+/* =========================
+   Education page
+   ========================= */
+body.page-education {
+  background: radial-gradient(circle at 20% 10%, #062a33 0%, #071a2a 45%, #000 100%);
 }
 
-.about-list li {
-  padding-left: 1rem;
+.bg-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 25% 20%, rgba(56, 189, 248, 0.14), transparent 55%),
+    radial-gradient(circle at 70% 65%, rgba(34, 211, 238, 0.10), transparent 55%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(148, 163, 184, 0.08) 0px,
+      rgba(148, 163, 184, 0.08) 1px,
+      transparent 1px,
+      transparent 34px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.06) 0px,
+      rgba(148, 163, 184, 0.06) 1px,
+      transparent 1px,
+      transparent 34px
+    );
+
+  opacity: 0.98;
+  animation: edu-grid-drift 32s ease-in-out infinite alternate;
+}
+
+@keyframes edu-grid-drift {
+  0%   { transform: translate3d(-1.5%, -1%, 0) scale(1); }
+  100% { transform: translate3d(1.5%, 1%, 0) scale(1.02); }
+}
+
+.edu {
   position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 5vw 3rem;
 }
 
-.about-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 6px;
-  height: 6px;
+.edu-card {
+  width: min(1100px, 100%);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(2, 6, 23, 0.55);
+  backdrop-filter: blur(14px);
+  border-radius: 24px;
+  padding: clamp(1.25rem, 3.2vw, 2rem);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
+}
+
+.edu-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.edu-title {
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
+  font-weight: 750;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #e5e7eb, #7dd3fc, #38bdf8, #60a5fa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.edu-pill {
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(2, 6, 23, 0.35);
+  padding: 0.4rem 0.75rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, #fb7185, #a78bfa);
 }
 
-.about-tags {
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 1rem;
+}
+
+.edu-panel {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: 18px;
+  padding: 1.1rem;
+}
+
+.edu-panel h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #f9fafb;
+  letter-spacing: 0.02em;
+}
+
+.edu-text {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.edu-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0.5rem 0 1rem;
 }
 
-.tag {
-  font-size: 0.8rem;
-  color: #e5e7eb;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  background: rgba(2, 6, 23, 0.35);
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-}
-
-.about-actions {
+.edu-actions {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  margin-bottom: 0.75rem;
 }
 
-.about-note {
-  margin-top: 0.75rem;
+.edu-note {
   color: #94a3b8;
   font-size: 0.85rem;
 }
 
-@media (max-width: 860px) {
+.course-groups {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.course-group-header h3 {
+  font-size: 1rem;
+  color: #f9fafb;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+.course-group-header p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.course-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.course {
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(2, 6, 23, 0.25);
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+}
+
+.course h4 {
+  font-size: 0.95rem;
+  color: #f9fafb;
+  margin: 0;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  body { overflow: auto; }
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
   .about-grid {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 640px) {
+  .site-header {
+    padding-inline: 1.25rem;
+  }
+
+  .nav {
+    gap: 0.9rem;
+  }
+
+  .hero {
+    padding-inline: 1.25rem;
+    text-align: left;
+  }
+
+  .hero-actions {
+    justify-content: flex-start;
+  }
+}
+
+.course-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.75rem 0 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.filter-btn {
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(2, 6, 23, 0.35);
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.15s ease-out, border-color 0.2s ease-out;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.7);
+}
+
+.filter-btn.active {
+  border-color: rgba(56, 189, 248, 0.95);
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.18);
+}
+
+.course-count {
+  margin-left: auto;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+
