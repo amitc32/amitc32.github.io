@@ -319,7 +319,7 @@ body.page-education {
 }
 
 .bg-pattern {
-  position: fixed;
+  position: relative;
   inset: 0;
   z-index: 2;
   pointer-events: none;
@@ -356,7 +356,7 @@ body.page-education {
   z-index: 2;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 7rem 5vw 3rem;
 }
@@ -554,6 +554,7 @@ body.page-education {
   color: #9ca3af;
   font-size: 0.85rem;
 }
+
 
 
 
