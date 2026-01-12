@@ -314,6 +314,8 @@ body {
    ========================= */
 body.page-education {
   background: radial-gradient(circle at 20% 10%, #062a33 0%, #071a2a 45%, #000 100%);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .bg-pattern {
@@ -552,6 +554,7 @@ body.page-education {
   color: #9ca3af;
   font-size: 0.85rem;
 }
+
 
 
 
