@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="page-education">
+  <div class="starfield" id="starfield" aria-hidden="true"></div>
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="logo">Aidan Mitchell.</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="education.html" class="nav-link active">Education</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="edu">
+    <section class="edu-card">
+      <p class="edu-kicker">Education</p>
+      <h1 class="edu-title">Coursework & Focus</h1>
+
+      <p>
+        I am currently completing a BESc in Electrical Engineering and Artificial Intelligence Systems Engineering at Western University.
+      </p>
+      <t>
+          
+      </t>
+      
+      <div class="course-toolbar" role="group" aria-label="Course categories">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="ee">Electrical / Hardware</button>
+        <button class="filter-btn" type="button" data-filter="signals">Signals / Comms</button>
+        <button class="filter-btn" type="button" data-filter="control">Control / CPS</button>
+        <button class="filter-btn" type="button" data-filter="ml">AI / ML</button>
+        <button class="filter-btn" type="button" data-filter="soft">Software / Cloud</button>
+        <button class="filter-btn" type="button" data-filter="other">Math / Ethics / Biomedical</button>
+
+        <span class="course-count" id="courseCount" aria-live="polite"></span>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-panel">
+          <h2>Courses</h2>
+
+          <div class="course-groups" id="courseGroups">
+
+            <section class="course-group" data-cat="soft">
+              <div class="course-group-header">
+                <h3>Software Engineering & Systems Design</h3>
+                <p>Core software foundations and system-level design.</p>
+              </div>
+              <div class="course-list">
+                <article class="course"><h4>SE 2205a — Algorithms & Data Structure for Object-Oriented Design</h4></article>
+                <article class="course"><h4>AISE 2251b — Software Design for Systems Engineering</h4></article>
+                <article class="course"><h4>SE 3309a — Database Management Systems</h4></article>
+                <article class="course"><h4>SE 4455b — Cloud Computing: Concepts, Technologies and Applications</h4></article>
+              </div>
+            </section>
+
+            <section class="course-group" data-cat="ml">
+              <div class="course-group-header">
+                <h3>AI / Machine Learning</h3>
+                <p>ML fundamentals, data engineering, and responsible AI.</p>
+              </div>
+              <div class="course-list">
+                <article class="course"><h4>DATASCI 3000a — Introduction to Machine Learning</h4></article>
+                <article class="course"><h4>AISE 3010b — Data Engineering and Machine Learning</h4></article>
+                <article class="course"><h4>AISE 3020a — AI: Ethics, Bias and Privacy</h4></article>
+              </div>
+            </section>
+
+            <section class="course-group" data-cat="ee">
+              <div class="course-group-header">
+                <h3>Electrical, Electronics & Digital Hardware</h3>
+                <p>Circuits → electronics → embedded → electronic system design.</p>
+              </div>
+              <div class="course-list">
+                <article class="course"><h4>ECE 2205a — Electric Circuits</h4></article>
+                <article class="course"><h4>ECE 2233b — Circuits and Systems</h4></article>
+                <article class="course"><h4>ECE 2231b — Introduction to Electronics</h4></article>
+                <article class="course"><h4>ECE 3337a — Electronic Circuits</h4></article>
+                <article class="course"><h4>ECE 2277a — Digital Logic Systems</h4></article>
+                <article class="course"><h4>ECE 3375b — Microprocessors and Microcontrollers</h4></article>
+                <article class="course"><h4>ECE 3399b — Principles and Practices of Design of Electronic Systems</h4></article>
+                <article class="course"><h4>ECE 2236b — Magnetic Circuits & Transmission Lines</h4></article>
+                <article class="course"><h4>ECE 3332a — Electric Machines</h4></article>
+                <article class="course"><h4>ECE 3333b — Electric Power Systems I</h4></article>
+              </div>
+            </section>
+
+            <section class="course-group" data-cat="signals">
+              <div class="course-group-header">
+                <h3>Signals, DSP, Imaging & Communications</h3>
+                <p>Signal processing and communications, including image processing.</p>
+              </div>
+              <div class="course-list">
+                <article class="course"><h4>AISE 3351b — Digital Systems and Signal Processing</h4></article>
+                <article class="course"><h4>ECE 3370b — Analog Communications Theory</h4></article>
+                <article class="course"><h4>ECE 4437a — Communications Theory</h4></article>
+                <article class="course"><h4>ECE 4445a — Introduction to Digital Image Processing</h4></article>
+              </div>
+            </section>
+
+            <section class="course-group" data-cat="control">
+              <div class="course-group-header">
+                <h3>Control & Cyber-Physical Systems</h3>
+                <p>Control theory, CPS modeling, and data-driven control.</p>
+              </div>
+              <div class="course-list">
+                <article class="course"><h4>ECE 3330a — Control Systems</h4></article>
+                <article class="course"><h4>AISE 3350a — Cyber-Physical Systems Theory</h4></article>
+                <article class="course"><h4>AISE 4450a — Data Driven Control of Cyber-Physical Systems</h4></article>
+              </div>
+            </section>
+
+            <section class="course-group" data-cat="other">
+              <div class="course-group-header">
+                <h3>Math, Biomedical & Professional Practice</h3>
+                <p>Supporting theory + ethics and cross-domain systems.</p>
+              </div>
+              <div class="course-list">
+                <article class="course"><h4>NMM 3415a — Advanced Applied Mathematics for Electrical Engineering</h4></article>
+                <article class="course"><h4>ECE 4455a — Biomedical Systems Analysis</h4></article>
+                <article class="course"><h4>ELI 4110F — The Ethical Engineer</h4></article>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+        <div class="edu-panel">
+  <h2>Tools & environments used</h2>
+  <div class="edu-tags">
+    <span class="tag">MATLAB</span>
+    <span class="tag">Python</span>
+    <span class="tag">C / C++</span>
+    <span class="tag">Quartus</span>
+    <span class="tag">HTML</span>
+    <span class="tag">React.js</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Azure</span>
+    <span class="tag">Verilog</span>
+    <span class="tag">TensorFlow/PyTorch</span>
+    <span class="tag">Java</span>
+    <span class="tag">EAGLE</span>
+    <span class="tag">Altium</span>
+    <span class="tag">Figma</span>
+    <span class="tag">GCP</span>
+    <span class="tag">Kubernetes</span>
+    <span class="tag">SQL</span>
+  </div>
+</div>
+
+
+          <p class="edu-note">
+            Use the category buttons to quickly view the area you’re interested in.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>
