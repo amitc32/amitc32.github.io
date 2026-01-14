@@ -316,9 +316,9 @@ body.page-education {
 }
 
 .bg-pattern {
-  position: relative;
+  position: fixed;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 
   background:
@@ -551,6 +551,7 @@ body.page-education {
   color: #9ca3af;
   font-size: 0.85rem;
 }
+
 
 
 
