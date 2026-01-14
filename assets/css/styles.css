@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-html, body { height: auto; min-height: 100%; }
+html, body {min-height: 100%; }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -551,6 +551,7 @@ body.page-education {
   color: #9ca3af;
   font-size: 0.85rem;
 }
+
 
 
 
