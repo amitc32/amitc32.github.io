@@ -17,7 +17,7 @@ body {
 }
 
 .starfield {
-  position: relative;
+  position: fixed;
   inset: 0;
   overflow: visible;
   pointer-events: none;
@@ -551,6 +551,7 @@ body.page-education {
   color: #9ca3af;
   font-size: 0.85rem;
 }
+
 
 
 
