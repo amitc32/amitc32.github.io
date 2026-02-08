@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page-experience">
+  <div class="starfield" id="starfield" aria-hidden="true"></div>
+  <div class="exp-pattern" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="logo">Aidan Mitchell.</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="experience.html" class="nav-link active">Experience</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="exp">
+    <section class="exp-card">
+      <p class="exp-kicker">Experience</p>
+      <h1 class="exp-title">Work + Projects</h1>
+      <p class="exp-subtitle">
+      </p>
+
+      <div class="exp-toolbar" role="group" aria-label="Experience filters">
+        <button class="exp-filter-btn active" type="button" data-filter="all">All</button>
+        <button class="exp-filter-btn" type="button" data-filter="work">Work</button>
+        <button class="exp-filter-btn" type="button" data-filter="projects">Projects</button>
+        <button class="exp-filter-btn" type="button" data-filter="skills">Skills</button>
+        <span class="exp-count" id="expCount" aria-live="polite"></span>
+      </div>
+
+      <div class="exp-layout">
+        <!-- LEFT: Timeline -->
+        <section class="exp-timeline" id="expTimeline">
+          <h2 class="exp-section-title">Timeline</h2>
+          
+          <article class="exp-item" data-type="work">
+            <div class="exp-dot" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Work Study — University of Western Ontario</h3>
+                  <p class="exp-meta">November 2025 – Present</p>
+                </div>
+                <span class="exp-badge">Work</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Creating a physical version of the Graduate SmartStart Brightspace page for Western Engineering.</li>
+                <li>Streamlining a program to create a set template for graduate course syllabus.</li>
+                <li>Researched and compared various universities graduate program to Western's in search of lacking areas.</li>
+              </ul>
+              </article>
+              
+          <article class="exp-item" data-type="work">
+            <div class="exp-dot" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Summer Student III — University of Western Ontario</h3>
+                  <p class="exp-meta">June 2025 – August 2025</p>
+                </div>
+                <span class="exp-badge">Work</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Created, migrated, and managed the Graduate SmartStart Brightspace page for Western Engineering.</li>
+                <li>Produced a year-end report for the Dean’s Office, summarizing achievement and attendance metrics.</li>
+                <li>Adapted quickly across smaller tasks/projects as priorities shifted.</li>
+              </ul>
+
+              <details class="exp-details">
+                <summary>What I did (more detail)</summary>
+                <p>
+                  This role sharpened my ability to translate stakeholder needs into a clean, maintainable Brightspace experience
+                  and to communicate outcomes in an executive-friendly format.
+                </p>
+              </details>
+
+              <div class="exp-tags">
+                <span class="tag">Brightspace</span>
+                <span class="tag">Reporting</span>
+                <span class="tag">Content Systems</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-item" data-type="work">
+            <div class="exp-dot" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">IT Support Summer Student — York Region District School Board</h3>
+                  <p class="exp-meta">May 2024 – September 2024</p>
+                </div>
+                <span class="exp-badge">Work</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Worked with sensitive data to identify personal information exposed in a breach scenario.</li>
+                <li>Built a Python script for automated detection and extraction of personal information, improving productivity by 50%.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Handling</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Security</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-item" data-type="work">
+            <div class="exp-dot" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Freelance Website Designer</h3>
+                  <p class="exp-meta">December 2023 – Present</p>
+                </div>
+                <span class="exp-badge">Work</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Built modern websites for a CREA-certified real estate agent; increased site traffic by 30% and engagement by 20%.</li>
+                <li>Strengthened core HTML/CSS fundamentals through real client delivery.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">UX</span>
+                <span class="tag">Client Delivery</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-item" data-type="work">
+            <div class="exp-dot" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">IT Support Summer Student — York Region District School Board</h3>
+                  <p class="exp-meta">May 2023 – September 2023</p>
+                </div>
+                <span class="exp-badge">Work</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Enhanced intranet UI/functionality using HTML and SharePoint.</li>
+                <li>Contributed to SharePoint Online implementation for the new board calendar.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">SharePoint</span>
+                <span class="tag">HTML</span>
+                <span class="tag">IT Support</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="exp-divider" aria-hidden="true"></div>
+          <h2 class="exp-section-title exp-section-title-small">Selected Projects</h2>
+
+          <article class="exp-item" data-type="projects">
+            <div class="exp-dot exp-dot-project" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Speech Recognition API (Voice-controlled Chrome)</h3>
+                  <p class="exp-meta">April 2025</p>
+                </div>
+                <span class="exp-badge exp-badge-project">Project</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Built a computer vision workflow with OpenCV + Pytesseract + Google Speech API to control Chrome with voice commands.</li>
+                <li>Continuing development in beta with additional features and test cases.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">OpenCV</span>
+                <span class="tag">Pytesseract</span>
+                <span class="tag">Speech API</span>
+                <span class="tag">Accessibility</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-item" data-type="projects">
+            <div class="exp-dot exp-dot-project" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Brushless DC Motor (Axial Out-runner)</h3>
+                  <p class="exp-meta">December 2024</p>
+                </div>
+                <span class="exp-badge exp-badge-project">Project</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Designed and built an axial out-runner BLDC motor with CAD parts, magnets, and soldered windings (team of 5).</li>
+                <li>Achieved a working design targeted for ~3A current operation.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">CAD</span>
+                <span class="tag">Soldering</span>
+                <span class="tag">Electromechanics</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-item" data-type="projects">
+            <div class="exp-dot exp-dot-project" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Deep Learning Prediction Model (LSTM, Time Series)</h3>
+                  <p class="exp-meta">November 2024</p>
+                </div>
+                <span class="exp-badge exp-badge-project">Project</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Built an LSTM model to predict US economic time series data (team of 4).</li>
+                <li>Applied preprocessing + classification techniques; reached ~83% accuracy.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">Time Series</span>
+                <span class="tag">LSTM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-item" data-type="projects">
+            <div class="exp-dot exp-dot-project" aria-hidden="true"></div>
+            <div class="exp-item-card">
+              <div class="exp-item-top">
+                <div>
+                  <h3 class="exp-role">Transfer Learning Classification (SUN397)</h3>
+                  <p class="exp-meta">April 2024</p>
+                </div>
+                <span class="exp-badge exp-badge-project">Project</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Trained/tested a transfer learning model in TensorFlow/Keras on SUN397.</li>
+                <li>Reached ~58% accuracy over 10 epochs (batch size 32).</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Keras</span>
+                <span class="tag">Transfer Learning</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-skillcard" data-type="skills">
+            <h2 class="exp-section-title exp-section-title-small">Skills Snapshot</h2>
+            <p class="exp-skilltext">
+              Python, Java, MATLAB, C, HTML/CSS, cloud (Azure/GCP),
+              ML tooling (scikit-learn, PyTorch, NumPy), SQL, SharePoint, CAD, and electronics prototyping.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Java</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">C</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Azure</span>
+              <span class="tag">GCP</span>
+              <span class="tag">CAD</span>
+            </div>
+            <p class="exp-skilltext" style="margin-top:0.75rem;">
+              Languages: English and French (fluent).
+            </p>
+          </article>
+
+        </section>
+
+        <aside class="exp-side">
+          <div class="exp-side-card">
+            <h2>Certifications</h2>
+            <ul class= "exp-bullets">
+              <li>Introduction to Kubernetes on Azure</li>
+              <li>Completion of Google Skills Labs</li>
+            </ul>
+          </div>
+
+          <div class="exp-side-card">
+            <h2>What I’m building next</h2>
+            <p>
+              Currently, for my final year capstone, I am in progress of building a facial recognition doorlock, which connects to an external application for verification. This project uses circuitry knowledge, netowrking in combinbation with a facial recognition dataset.
+            </p>
+          </div>
+                    <div class="exp-side-card">
+            <h2>Side projects</h2>
+            <ul class= "exp-bullets">
+              <li>Exploratory Data Analysis on NHL Goalies</li>
+              <li>iOS application of Spotify Roulette</li>
+              <li>Smaller dataset tests of regression, CUDA C</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
