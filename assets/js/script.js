@@ -34,9 +34,6 @@ if (starfield) {
   }
 }
 
-/* -------------------------
-   EDUCATION: CATEGORY FILTER
-   ------------------------- */
 function initEducationCategoryFilter() {
   const buttons = document.querySelectorAll(".filter-btn[data-filter]");
   const groups = document.querySelectorAll(".course-group[data-cat]");
@@ -127,3 +124,37 @@ ctaButtons.forEach((btn) => {
     animate(btn, { scale: 1 }, { duration: 0.2, easing: "ease-out" });
   });
 });
+
+function initExperienceFilters() {
+  const isExperience = document.body.classList.contains("page-experience");
+  if (!isExperience) return;
+
+  const buttons = document.querySelectorAll(".exp-filter-btn[data-filter]");
+  const items = document.querySelectorAll("[data-type]");
+  const countEl = document.getElementById("expCount");
+
+  if (!buttons.length || !items.length) return;
+
+  function setFilter(mode) {
+    buttons.forEach((b) => b.classList.toggle("active", b.dataset.filter === mode));
+
+    let visible = 0;
+    items.forEach((el) => {
+      const type = el.dataset.type;
+      const show = mode === "all" || type === mode;
+      el.style.display = show ? "" : "none";
+      if (show) visible++;
+    });
+
+    if (countEl) {
+      countEl.textContent = mode === "all"
+        ? `Showing ${visible} items`
+        : `Showing ${visible} items`;
+    }
+  }
+
+  buttons.forEach((btn) => btn.addEventListener("click", () => setFilter(btn.dataset.filter)));
+  setFilter("all");
+}
+
+initExperienceFilters();
